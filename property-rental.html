@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment A-2911-a | Postira, Brač | Sea View Terrace</title>
+    <meta name="description" content="Charming apartment with terrace and sea view in Postira, Brač. 400m from the beach. Book your Croatian Adriatic vacation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a5f7a;
+            --primary-dark: #134252;
+            --accent: #d4a574;
+            --accent-light: #e8c9a3;
+            --text: #2c3e50;
+            --text-light: #546e7a;
+            --bg: #ffffff;
+            --bg-alt: #f8f9fa;
+            --border: #e0e0e0;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            background: var(--bg);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--bg);
+            box-shadow: 0 2px 10px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .lang-selector {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .lang-btn {
+            padding: 0.4rem 0.8rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .lang-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .book-btn {
+            background: var(--accent);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+
+        .book-btn:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://i.adriatic.hr/private-accommodation/2911/dalmatia-apartments-property-1-l.jpg') center/cover;
+            opacity: 0.4;
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            color: white;
+            max-width: 900px;
+            padding: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero-features {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            text-align: center;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            box-shadow: 0 4px 15px var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--bg-alt);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 1px solid var(--border);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px var(--shadow);
+            border-color: var(--accent);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+        }
+
+        /* Amenities */
+        .amenities-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .amenity-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--bg-alt);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .amenity-item:hover {
+            background: white;
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        .amenity-icon {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        /* Location */
+        .location-info {
+            background: var(--bg-alt);
+            padding: 3rem;
+            border-radius: 12px;
+            margin-top: 3rem;
+        }
+
+        .distances {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .distance-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .distance-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+        }
+
+        .distance-label {
+            color: var(--text-light);
+            margin-top: 0.5rem;
+        }
+
+        /* Pricing */
+        .pricing-card {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 500px;
+            margin: 3rem auto;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+
+        .price {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .price-note {
+            opacity: 0.9;
+            margin-top: 1rem;
+        }
+
+        .discount-badge {
+            background: var(--accent);
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Reviews */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .review-card {
+            background: var(--bg-alt);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .review-rating {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 3rem auto;
+            background: var(--bg-alt);
+            padding: 3rem;
+            border-radius: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-dark);
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 5rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-light);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Language Content */
+        [data-lang] {
+            display: none;
+        }
+
+        [data-lang].active {
+            display: block;
+        }
+
+        .inline-lang {
+            display: none;
+        }
+
+        .inline-lang.active {
+            display: inline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .price {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Villa Postira</a>
+            <ul class="nav-links">
+                <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                <li><a href="#features" class="nav-link" data-section="features">Features</a></li>
+                <li><a href="#location" class="nav-link" data-section="location">Location</a></li>
+                <li><a href="#pricing" class="nav-link" data-section="pricing">Pricing</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="hr">HR</button>
+                <button class="lang-btn" data-lang="pl">PL</button>
+                <button class="lang-btn" data-lang="sl">SL</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="it">IT</button>
+            </div>
+            <button class="book-btn" onclick="location.href='#contact'">
+                <span class="inline-lang active" data-lang="en">Book Now</span>
+                <span class="inline-lang" data-lang="hr">Rezerviraj</span>
+                <span class="inline-lang" data-lang="pl">Zarezerwuj</span>
+                <span class="inline-lang" data-lang="sl">Rezerviraj</span>
+                <span class="inline-lang" data-lang="de">Jetzt buchen</span>
+                <span class="inline-lang" data-lang="it">Prenota ora</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-lang="en" class="active">Sea View Apartment in Postira</h1>
+            <h1 data-lang="hr">Apartman s pogledom na more u Postiri</h1>
+            <h1 data-lang="pl">Apartament z widokiem na morze w Postira</h1>
+            <h1 data-lang="sl">Apartma s pogledom na morje v Postiri</h1>
+            <h1 data-lang="de">Apartment mit Meerblick in Postira</h1>
+            <h1 data-lang="it">Appartamento vista mare a Postira</h1>
+
+            <p data-lang="en" class="active">Experience the beauty of Brač island in this charming apartment with terrace and stunning sea views</p>
+            <p data-lang="hr">Doživite ljepotu otoka Brača u ovom šarmantnom apartmanu s terasom i prekrasnim pogledom na more</p>
+            <p data-lang="pl">Odkryj piękno wyspy Brač w tym uroczym apartamencie z tarasem i wspaniałym widokiem na morze</p>
+            <p data-lang="sl">Izkusite lepoto otoka Brač v tem očarljivem apartmaju s teraso in čudovitim pogledom na morje</p>
+            <p data-lang="de">Erleben Sie die Schönheit der Insel Brač in dieser charmanten Wohnung mit Terrasse und herrlichem Meerblick</p>
+            <p data-lang="it">Vivi la bellezza dell'isola di Brač in questo affascinante appartamento con terrazza e vista mare mozzafiato</p>
+
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <span>🏖️</span>
+                    <span data-lang="en" class="inline-lang active">400m to beach</span>
+                    <span data-lang="hr" class="inline-lang">400m od plaže</span>
+                    <span data-lang="pl" class="inline-lang">400m do plaży</span>
+                    <span data-lang="sl" class="inline-lang">400m do plaže</span>
+                    <span data-lang="de" class="inline-lang">400m zum Strand</span>
+                    <span data-lang="it" class="inline-lang">400m dalla spiaggia</span>
+                </div>
+                <div class="hero-feature">
+                    <span>🌊</span>
+                    <span data-lang="en" class="inline-lang active">Sea View Terrace</span>
+                    <span data-lang="hr" class="inline-lang">Terasa s pogledom na more</span>
+                    <span data-lang="pl" class="inline-lang">Taras z widokiem na morze</span>
+                    <span data-lang="sl" class="inline-lang">Terasa s pogledom na morje</span>
+                    <span data-lang="de" class="inline-lang">Terrasse mit Meerblick</span>
+                    <span data-lang="it" class="inline-lang">Terrazza vista mare</span>
+                </div>
+                <div class="hero-feature">
+                    <span>👥</span>
+                    <span data-lang="en" class="inline-lang active">2+1 Guests</span>
+                    <span data-lang="hr" class="inline-lang">2+1 Gosti</span>
+                    <span data-lang="pl" class="inline-lang">2+1 Gości</span>
+                    <span data-lang="sl" class="inline-lang">2+1 Gostov</span>
+                    <span data-lang="de" class="inline-lang">2+1 Gäste</span>
+                    <span data-lang="it" class="inline-lang">2+1 Ospiti</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container">
+        <h2 class="section-title" data-lang="en">Photo Gallery</h2>
+        <h2 class="section-title" data-lang="hr">Foto galerija</h2>
+        <h2 class="section-title" data-lang="pl">Galeria zdjęć</h2>
+        <h2 class="section-title" data-lang="sl">Foto galerija</h2>
+        <h2 class="section-title" data-lang="de">Fotogalerie</h2>
+        <h2 class="section-title" data-lang="it">Galleria fotografica</h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://i.adriatic.hr/private-accommodation/2911/dalmatia-apartments-property-1-l.jpg" alt="Property exterior">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.adriatic.hr/private-accommodation/2911/a-2911-a/postira-apartment-terrace-1.jpg" alt="Terrace with sea view">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.adriatic.hr/private-accommodation/2911/a-2911-a/postira-apartment-living-room-1.jpg" alt="Living room">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.adriatic.hr/private-accommodation/2911/a-2911-a/postira-apartment-bedroom-1.jpg" alt="Bedroom">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.adriatic.hr/private-accommodation/2911/a-2911-a/postira-apartment-kitchen-1.jpg" alt="Kitchen">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container" style="background: var(--bg-alt); padding: 5rem 2rem;">
+        <h2 class="section-title" data-lang="en">Apartment Features</h2>
+        <h2 class="section-title" data-lang="hr">Značajke apartmana</h2>
+        <h2 class="section-title" data-lang="pl">Cechy apartamentu</h2>
+        <h2 class="section-title" data-lang="sl">Značilnosti apartmaja</h2>
+        <h2 class="section-title" data-lang="de">Apartment-Ausstattung</h2>
+        <h2 class="section-title" data-lang="it">Caratteristiche dell'appartamento</h2>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🏠</div>
+                <h3>43 m² + 12 m²</h3>
+                <p data-lang="en" class="active">Spacious living area with terrace</p>
+                <p data-lang="hr">Prostran dnevni boravak s terasom</p>
+                <p data-lang="pl">Przestronna część dzienna z tarasem</p>
+                <p data-lang="sl">Prostoren dnevni prostor s teraso</p>
+                <p data-lang="de">Geräumiger Wohnbereich mit Terrasse</p>
+                <p data-lang="it">Ampia zona giorno con terrazza</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛏️</div>
+                <h3 data-lang="en" class="inline-lang active">1 Bedroom</h3>
+                <h3 data-lang="hr" class="inline-lang">1 Spavaća soba</h3>
+                <h3 data-lang="pl" class="inline-lang">1 Sypialnia</h3>
+                <h3 data-lang="sl" class="inline-lang">1 Spalnica</h3>
+                <h3 data-lang="de" class="inline-lang">1 Schlafzimmer</h3>
+                <h3 data-lang="it" class="inline-lang">1 Camera da letto</h3>
+                <p data-lang="en" class="active">Comfortable sleeping for 2+1 guests</p>
+                <p data-lang="hr">Udoban smještaj za 2+1 goste</p>
+                <p data-lang="pl">Komfortowe zakwaterowanie dla 2+1 gości</p>
+                <p data-lang="sl">Udobna namestitev za 2+1 goste</p>
+                <p data-lang="de">Komfortable Unterkunft für 2+1 Gäste</p>
+                <p data-lang="it">Alloggio confortevole per 2+1 ospiti</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌅</div>
+                <h3 data-lang="en" class="inline-lang active">Sea View</h3>
+                <h3 data-lang="hr" class="inline-lang">Pogled na more</h3>
+                <h3 data-lang="pl" class="inline-lang">Widok na morze</h3>
+                <h3 data-lang="sl" class="inline-lang">Pogled na morje</h3>
+                <h3 data-lang="de" class="inline-lang">Meerblick</h3>
+                <h3 data-lang="it" class="inline-lang">Vista mare</h3>
+                <p data-lang="en" class="active">Stunning Adriatic views from terrace</p>
+                <p data-lang="hr">Prekrasan pogled na Jadran s terase</p>
+                <p data-lang="pl" class="inline-lang">Wspaniały widok na Adriatyk z tarasu</p>
+                <p data-lang="sl" class="active">Čudovit razgled na Jadran s terase</p>
+                <p data-lang="de">Herrlicher Blick auf die Adria von der Terrasse</p>
+                <p data-lang="it">Vista mozzafiato sull'Adriatico dal terrazzo</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🅿️</div>
+                <h3 data-lang="en" class="inline-lang active">Free Parking</h3>
+                <h3 data-lang="hr" class="inline-lang">Besplatno parkiranje</h3>
+                <h3 data-lang="pl" class="inline-lang">Bezpłatny parking</h3>
+                <h3 data-lang="sl" class="inline-lang">Brezplačno parkiranje</h3>
+                <h3 data-lang="de" class="inline-lang">Kostenlose Parkplätze</h3>
+                <h3 data-lang="it" class="inline-lang">Parcheggio gratuito</h3>
+                <p data-lang="en" class="active">Private parking space available</p>
+                <p data-lang="hr">Dostupno privatno parkirno mjesto</p>
+                <p data-lang="pl">Dostępne prywatne miejsce parkingowe</p>
+                <p data-lang="sl">Na voljo zasebno parkirno mesto</p>
+                <p data-lang="de">Privater Parkplatz verfügbar</p>
+                <p data-lang="it">Posto auto privato disponibile</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="container">
+        <h2 class="section-title" data-lang="en">Amenities & Services</h2>
+        <h2 class="section-title" data-lang="hr">Pogodnosti i usluge</h2>
+        <h2 class="section-title" data-lang="pl">Udogodnienia i usługi</h2>
+        <h2 class="section-title" data-lang="sl">Storitve in oprema</h2>
+        <h2 class="section-title" data-lang="de">Ausstattung & Services</h2>
+        <h2 class="section-title" data-lang="it">Servizi e comfort</h2>
+
+        <div class="amenities-list">
+            <div class="amenity-item">
+                <span class="amenity-icon">📶</span>
+                <span>WiFi</span>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">❄️</span>
+                <span data-lang="en" class="inline-lang active">Air Conditioning</span>
+                <span data-lang="hr" class="inline-lang">Klima uređaj</span>
+                <span data-lang="pl" class="inline-lang">Klimatyzacja</span>
+                <span data-lang="sl" class="inline-lang">Klimatska naprava</span>
+                <span data-lang="de" class="inline-lang">Klimaanlage</span>
+                <span data-lang="it" class="inline-lang">Aria condizionata</span>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">🍳</span>
+                <span data-lang="en" class="inline-lang active">Fully Equipped Kitchen</span>
+                <span data-lang="hr" class="inline-lang">Potpuno opremljena kuhinja</span>
+                <span data-lang="pl" class="inline-lang">W pełni wyposażona kuchnia</span>
+                <span data-lang="sl" class="inline-lang">Popolnoma opremljena kuhinja</span>
+                <span data-lang="de" class="inline-lang">Voll ausgestattete Küche</span>
+                <span data-lang="it" class="inline-lang">Cucina completamente attrezzata</span>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">🧺</span>
+                <span data-lang="en" class="inline-lang active">Dishwasher</span>
+                <span data-lang="hr" class="inline-lang">Perilica posuđa</span>
+                <span data-lang="pl" class="inline-lang">Zmywarka</span>
+                <span data-lang="sl" class="inline-lang">Pomivalni stroj</span>
+                <span data-lang="de" class="inline-lang">Geschirrspüler</span>
+                <span data-lang="it" class="inline-lang">Lavastoviglie</span>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">🔥</span>
+                <span data-lang="en" class="inline-lang active">BBQ Grill</span>
+                <span data-lang="hr" class="inline-lang">Roštilj</span>
+                <span data-lang="pl" class="inline-lang">Grill</span>
+                <span data-lang="sl" class="inline-lang">Žar</span>
+                <span data-lang="de" class="inline-lang">Grill</span>
+                <span data-lang="it" class="inline-lang">Barbecue</span>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">🧴</span>
+                <span data-lang="en" class="inline-lang active">Towels & Linens</span>
+                <span data-lang="hr" class="inline-lang">Ručnici i posteljina</span>
+                <span data-lang="pl" class="inline-lang">Ręczniki i pościel</span>
+                <span data-lang="sl" class="inline-lang">Brisače in posteljnina</span>
+                <span data-lang="de" class="inline-lang">Handtücher & Bettwäsche</span>
+                <span data-lang="it" class="inline-lang">Asciugamani e biancheria</span>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">👶</span>
+                <span data-lang="en" class="inline-lang active">Baby Crib Available</span>
+                <span data-lang="hr" class="inline-lang">Dječji krevetić dostupan</span>
+                <span data-lang="pl" class="inline-lang">Łóżeczko dziecięce dostępne</span>
+                <span data-lang="sl" class="inline-lang">Otroška posteljica na voljo</span>
+                <span data-lang="de" class="inline-lang">Babybett verfügbar</span>
+                <span data-lang="it" class="inline-lang">Culla disponibile</span>
+            </div>
+            <div class="amenity-item">
+                <span class="amenity-icon">🧹</span>
+                <span data-lang="en" class="inline-lang active">Final Cleaning Included</span>
+                <span data-lang="hr" class="inline-lang">Završno čišćenje uključeno</span>
+                <span data-lang="pl" class="inline-lang">Sprzątanie końcowe wliczone</span>
+                <span data-lang="sl" class="inline-lang">Končno čiščenje vključeno</span>
+                <span data-lang="de" class="inline-lang">Endreinigung inklusive</span>
+                <span data-lang="it" class="inline-lang">Pulizia finale inclusa</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="container" style="background: var(--bg-alt); padding: 5rem 2rem;">
+        <h2 class="section-title" data-lang="en">Perfect Location</h2>
+        <h2 class="section-title" data-lang="hr">Savršena lokacija</h2>
+        <h2 class="section-title" data-lang="pl">Doskonała lokalizacja</h2>
+        <h2 class="section-title" data-lang="sl">Popolna lokacija</h2>
+        <h2 class="section-title" data-lang="de">Perfekte Lage</h2>
+        <h2 class="section-title" data-lang="it">Posizione perfetta</h2>
+
+        <p class="section-subtitle" data-lang="en" class="active">Located in the charming village of Postira on the island of Brač, our apartment offers easy access to beaches, restaurants, and local attractions.</p>
+        <p class="section-subtitle" data-lang="hr">Smješten u šarmantnom selu Postira na otoku Braču, naš apartman nudi lak pristup plažama, restoranima i lokalnim atrakcijama.</p>
+        <p class="section-subtitle" data-lang="pl">Położony w uroczej wiosce Postira na wyspie Brač, nasz apartament oferuje łatwy dostęp do plaż, restauracji i lokalnych atrakcji.</p>
+        <p class="section-subtitle" data-lang="sl">Naš apartma se nahaja v očarljivi vasici Postira na otoku Brač in ponuja enostaven dostop do plaž, restavracij in lokalnih znamenitosti.</p>
+        <p class="section-subtitle" data-lang="de">In der charmanten Ortschaft Postira auf der Insel Brač gelegen, bietet unser Apartment einfachen Zugang zu Stränden, Restaurants und lokalen Sehenswürdigkeiten.</p>
+        <p class="section-subtitle" data-lang="it">Situato nell'incantevole villaggio di Postira sull'isola di Brač, il nostro appartamento offre facile accesso a spiagge, ristoranti e attrazioni locali.</p>
+
+        <div class="distances">
+            <div class="distance-item">
+                <span class="distance-value">400m</span>
+                <span class="distance-label" data-lang="en" class="inline-lang active">Beach</span>
+                <span class="distance-label" data-lang="hr" class="inline-lang">Plaža</span>
+                <span class="distance-label" data-lang="pl" class="inline-lang">Plaża</span>
+                <span class="distance-label" data-lang="sl" class="inline-lang">Plaža</span>
+                <span class="distance-label" data-lang="de" class="inline-lang">Strand</span>
+                <span class="distance-label" data-lang="it" class="inline-lang">Spiaggia</span>
+            </div>
+            <div class="distance-item">
+                <span class="distance-value">130m</span>
+                <span class="distance-label" data-lang="en" class="inline-lang active">Shop</span>
+                <span class="distance-label" data-lang="hr" class="inline-lang">Trgovina</span>
+                <span class="distance-label" data-lang="pl" class="inline-lang">Sklep</span>
+                <span class="distance-label" data-lang="sl" class="inline-lang">Trgovina</span>
+                <span class="distance-label" data-lang="de" class="inline-lang">Geschäft</span>
+                <span class="distance-label" data-lang="it" class="inline-lang">Negozio</span>
+            </div>
+            <div class="distance-item">
+                <span class="distance-value">450m</span>
+                <span class="distance-label" data-lang="en" class="inline-lang active">Restaurant</span>
+                <span class="distance-label" data-lang="hr" class="inline-lang">Restoran</span>
+                <span class="distance-label" data-lang="pl" class="inline-lang">Restauracja</span>
+                <span class="distance-label" data-lang="sl" class="inline-lang">Restavracija</span>
+                <span class="distance-label" data-lang="de" class="inline-lang">Restaurant</span>
+                <span class="distance-label" data-lang="it" class="inline-lang">Ristorante</span>
+            </div>
+            <div class="distance-item">
+                <span class="distance-value">800m</span>
+                <span class="distance-label" data-lang="en" class="inline-lang active">Town Center</span>
+                <span class="distance-label" data-lang="hr" class="inline-lang">Centar</span>
+                <span class="distance-label" data-lang="pl" class="inline-lang">Centrum</span>
+                <span class="distance-label" data-lang="sl" class="inline-lang">Center</span>
+                <span class="distance-label" data-lang="de" class="inline-lang">Zentrum</span>
+                <span class="distance-label" data-lang="it" class="inline-lang">Centro</span>
+            </div>
+            <div class="distance-item">
+                <span class="distance-value">11km</span>
+                <span class="distance-label" data-lang="en" class="inline-lang active">Ferry Port</span>
+                <span class="distance-label" data-lang="hr" class="inline-lang">Trajektna luka</span>
+                <span class="distance-label" data-lang="pl" class="inline-lang">Port promowy</span>
+                <span class="distance-label" data-lang="sl" class="inline-lang">Trajektno pristanišče</span>
+                <span class="distance-label" data-lang="de" class="inline-lang">Fährhafen</span>
+                <span class="distance-label" data-lang="it" class="inline-lang">Porto traghetti</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="container">
+        <h2 class="section-title" data-lang="en">Pricing & Availability</h2>
+        <h2 class="section-title" data-lang="hr">Cijene i dostupnost</h2>
+        <h2 class="section-title" data-lang="pl">Ceny i dostępność</h2>
+        <h2 class="section-title" data-lang="sl">Cene in razpoložljivost</h2>
+        <h2 class="section-title" data-lang="de">Preise & Verfügbarkeit</h2>
+        <h2 class="section-title" data-lang="it">Prezzi e disponibilità</h2>
+
+        <div class="pricing-card">
+            <div class="discount-badge" data-lang="en" class="inline-lang active">-10% First Minute Discount</div>
+            <div class="discount-badge" data-lang="hr" class="inline-lang">-10% First Minute popust</div>
+            <div class="discount-badge" data-lang="pl" class="inline-lang">-10% Rabat First Minute</div>
+            <div class="discount-badge" data-lang="sl" class="inline-lang">-10% Popust First Minute</div>
+            <div class="discount-badge" data-lang="de" class="inline-lang">-10% First Minute Rabatt</div>
+            <div class="discount-badge" data-lang="it" class="inline-lang">-10% Sconto First Minute</div>
+
+            <p data-lang="en" class="active">From</p>
+            <p data-lang="hr">Od</p>
+            <p data-lang="pl">Od</p>
+            <p data-lang="sl">Od</p>
+            <p data-lang="de">Ab</p>
+            <p data-lang="it">Da</p>
+
+            <div class="price">€75.60</div>
+
+            <p class="price-note" data-lang="en" class="active">per night (originally €84.00)</p>
+            <p class="price-note" data-lang="hr">po noći (originalno €84.00)</p>
+            <p class="price-note" data-lang="pl">za noc (pierwotnie €84.00)</p>
+            <p class="price-note" data-lang="sl">na noč (prvotno €84.00)</p>
+            <p class="price-note" data-lang="de">pro Nacht (ursprünglich €84.00)</p>
+            <p class="price-note" data-lang="it">a notte (originariamente €84.00)</p>
+
+            <p style="margin-top: 1.5rem; opacity: 0.9;" data-lang="en" class="active">Additional discount for longer stays (14 nights = pay for 13)</p>
+            <p style="margin-top: 1.5rem; opacity: 0.9;" data-lang="hr">Dodatni popust za duži boravak (14 noći = plaćate 13)</p>
+            <p style="margin-top: 1.5rem; opacity: 0.9;" data-lang="pl">Dodatkowy rabat za dłuższe pobyty (14 nocy = płacisz za 13)</p>
+            <p style="margin-top: 1.5rem; opacity: 0.9;" data-lang="sl">Dodatni popust za daljše bivanje (14 noči = plačate 13)</p>
+            <p style="margin-top: 1.5rem; opacity: 0.9;" data-lang="de">Zusätzlicher Rabatt für längere Aufenthalte (14 Nächte = 13 zahlen)</p>
+            <p style="margin-top: 1.5rem; opacity: 0.9;" data-lang="it">Sconto aggiuntivo per soggiorni più lunghi (14 notti = paga 13)</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <p data-lang="en" class="active"><strong>What's included:</strong> WiFi, Air Conditioning, Parking, Towels & Linens, Final Cleaning, Tourist Tax</p>
+            <p data-lang="hr"><strong>Što je uključeno:</strong> WiFi, Klima, Parking, Ručnici i posteljina, Završno čišćenje, Turistička pristojba</p>
+            <p data-lang="pl"><strong>Co jest wliczone:</strong> WiFi, Klimatyzacja, Parking, Ręczniki i pościel, Sprzątanie końcowe, Opłata turystyczna</p>
+            <p data-lang="sl"><strong>Kaj je vključeno:</strong> WiFi, Klima, Parkiranje, Brisače in posteljnina, Končno čiščenje, Turistična taksa</p>
+            <p data-lang="de"><strong>Inbegriffen:</strong> WiFi, Klimaanlage, Parkplatz, Handtücher & Bettwäsche, Endreinigung, Kurtaxe</p>
+            <p data-lang="it"><strong>Cosa è incluso:</strong> WiFi, Aria condizionata, Parcheggio, Asciugamani e biancheria, Pulizia finale, Tassa di soggiorno</p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="container" style="background: var(--bg-alt); padding: 5rem 2rem;">
+        <h2 class="section-title" data-lang="en">Guest Reviews</h2>
+        <h2 class="section-title" data-lang="hr">Recenzije gostiju</h2>
+        <h2 class="section-title" data-lang="pl">Opinie gości</h2>
+        <h2 class="section-title" data-lang="sl">Ocene gostov</h2>
+        <h2 class="section-title" data-lang="de">Gästebewertungen</h2>
+        <h2 class="section-title" data-lang="it">Recensioni degli ospiti</h2>
+
+        <p class="section-subtitle" data-lang="en" class="active">Excellent rating: 4.9/5.0 based on 14 reviews</p>
+        <p class="section-subtitle" data-lang="hr">Izvrsna ocjena: 4.9/5.0 temeljem 14 recenzija</p>
+        <p class="section-subtitle" data-lang="pl">Doskonała ocena: 4.9/5.0 na podstawie 14 recenzji</p>
+        <p class="section-subtitle" data-lang="sl">Odlična ocena: 4.9/5.0 na podlagi 14 ocen</p>
+        <p class="section-subtitle" data-lang="de">Hervorragende Bewertung: 4.9/5.0 basierend auf 14 Bewertungen</p>
+        <p class="section-subtitle" data-lang="it">Valutazione eccellente: 4.9/5.0 basata su 14 recensioni</p>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-rating">★★★★★</div>
+                <p class="review-text" data-lang="en" class="active">"Beautiful, well-furnished and equipped apartment, lovely terrace with a view. The hosts made us feel at home from the very beginning."</p>
+                <p class="review-text" data-lang="hr">"Lijep, dobro namješten i opremljen apartman, lijepa terasa s pogledom. Vlasnici su nam od samog početka pružili osjećaj kao kod kuće."</p>
+                <p class="review-text" data-lang="pl">"Piękny, dobrze umeblowany i wyposażony apartament, urocze taras z widokiem. Gospodarze sprawili, że poczuliśmy się jak w domu od samego początku."</p>
+                <p class="review-text" data-lang="sl">"Lep, dobro opremljen apartma, čudovita terasa s pogledom. Gostitelji so nam že od začetka omogočili, da smo se počutili kot doma."</p>
+                <p class="review-text" data-lang="de">"Schöne, gut eingerichtete und ausgestattete Wohnung, schöne Terrasse mit Aussicht. Die Gastgeber haben uns von Anfang an das Gefühl gegeben, zu Hause zu sein."</p>
+                <p class="review-text" data-lang="it">"Bellissimo appartamento ben arredato e attrezzato, incantevole terrazza con vista. I padroni di casa ci hanno fatto sentire a casa fin dall'inizio."</p>
+                <p class="reviewer-name">- Ľubomír Heinrich</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-rating">★★★★★</div>
+                <p class="review-text" data-lang="en" class="active">"Wonderful and very clean apartment and garden. The beach is only 5 minutes walk away and the children really enjoyed it."</p>
+                <p class="review-text" data-lang="hr">"Prekrasan i vrlo čist apartman i vrt. Plaža je udaljena samo 5 minuta hoda, a djeca su jako uživala."</p>
+                <p class="review-text" data-lang="pl">"Wspaniały i bardzo czysty apartament i ogród. Plaża jest tylko 5 minut spacerem, a dzieci naprawdę się tym cieszyły."</p>
+                <p class="review-text" data-lang="sl">"Čudovit in zelo čist apartma in vrt. Plaža je le 5 minut hoje stran in otroci so res uživali."</p>
+                <p class="review-text" data-lang="de">"Wunderschöne und sehr saubere Wohnung und Garten. Der Strand ist nur 5 Gehminuten entfernt und die Kinder haben es wirklich genossen."</p>
+                <p class="review-text" data-lang="it">"Appartamento e giardino meraviglioso e molto pulito. La spiaggia è a soli 5 minuti a piedi e i bambini si sono davvero divertiti."</p>
+                <p class="reviewer-name">- STEFANO ROSSI</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-rating">★★★★★</div>
+                <p class="review-text" data-lang="en" class="active">"We had 6 wonderful days. Very friendly and hospitable hosts! The apartment was perfectly suitable for 4 people. Quiet location, with the nearest beach 7 minutes walk away - perfect!"</p>
+                <p class="review-text" data-lang="hr">"Imali smo 6 prekrasnih dana. Vrlo ljubazni i gostoljubivi domaćini! Apartman je bio savršeno prikladan za 4 osobe. Mirna lokacija, s najbližom plažom udaljenom 7 minuta hoda - savršeno!"</p>
+                <p class="review-text" data-lang="pl">"Mieliśmy 6 wspaniałych dni. Bardzo przyjaźni i gościnni gospodarze! Apartament był idealny dla 4 osób. Spokojna lokalizacja, z najbliższą plażą w odległości 7 minut spacerem - idealnie!"</p>
+                <p class="review-text" data-lang="sl">"Imeli smo 6 čudovitih dni. Zelo prijazni in gostoljubni gostitelji! Apartma je bil popolnoma primeren za 4 osebe. Mirna lokacija, z najbližjo plažo 7 minut hoje - popolno!"</p>
+                <p class="review-text" data-lang="de">"Wir hatten 6 wundervolle Tage. Sehr freundliche und gastfreundliche Gastgeber! Die Wohnung war perfekt für 4 Personen geeignet. Ruhige Lage, der nächste Strand 7 Minuten zu Fuß entfernt - perfekt!"</p>
+                <p class="review-text" data-lang="it">"Abbiamo trascorso 6 giorni meravigliosi. Ospiti molto cordiali e ospitali! L'appartamento era perfettamente adatto per 4 persone. Posizione tranquilla, con la spiaggia più vicina a 7 minuti a piedi - perfetto!"</p>
+                <p class="reviewer-name">- Alexandra Lazic</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="section-title" data-lang="en">Book Your Stay</h2>
+        <h2 class="section-title" data-lang="hr">Rezervirajte svoj boravak</h2>
+        <h2 class="section-title" data-lang="pl">Zarezerwuj swój pobyt</h2>
+        <h2 class="section-title" data-lang="sl">Rezervirajte svoje bivanje</h2>
+        <h2 class="section-title" data-lang="de">Buchen Sie Ihren Aufenthalt</h2>
+        <h2 class="section-title" data-lang="it">Prenota il tuo soggiorno</h2>
+
+        <p class="section-subtitle" data-lang="en" class="active">Send us your inquiry and we'll get back to you within 24 hours</p>
+        <p class="section-subtitle" data-lang="hr">Pošaljite nam svoj upit i javit ćemo vam se u roku od 24 sata</p>
+        <p class="section-subtitle" data-lang="pl">Wyślij nam zapytanie, a odpowiemy w ciągu 24 godzin</p>
+        <p class="section-subtitle" data-lang="sl">Pošljite nam povpraševanje in odgovorili vam bomo v 24 urah</p>
+        <p class="section-subtitle" data-lang="de">Senden Sie uns Ihre Anfrage und wir melden uns innerhalb von 24 Stunden bei Ihnen</p>
+        <p class="section-subtitle" data-lang="it">Inviaci la tua richiesta e ti risponderemo entro 24 ore</p>
+
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label data-lang="en" class="inline-lang active">Your Name *</label>
+                <label data-lang="hr" class="inline-lang">Vaše ime *</label>
+                <label data-lang="pl" class="inline-lang">Twoje imię *</label>
+                <label data-lang="sl" class="inline-lang">Vaše ime *</label>
+                <label data-lang="de" class="inline-lang">Ihr Name *</label>
+                <label data-lang="it" class="inline-lang">Il tuo nome *</label>
+                <input type="text" required>
+            </div>
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" required>
+            </div>
+            <div class="form-group">
+                <label data-lang="en" class="inline-lang active">Phone</label>
+                <label data-lang="hr" class="inline-lang">Telefon</label>
+                <label data-lang="pl" class="inline-lang">Telefon</label>
+                <label data-lang="sl" class="inline-lang">Telefon</label>
+                <label data-lang="de" class="inline-lang">Telefon</label>
+                <label data-lang="it" class="inline-lang">Telefono</label>
+                <input type="tel">
+            </div>
+            <div class="form-group">
+                <label data-lang="en" class="inline-lang active">Check-in Date *</label>
+                <label data-lang="hr" class="inline-lang">Datum dolaska *</label>
+                <label data-lang="pl" class="inline-lang">Data przyjazdu *</label>
+                <label data-lang="sl" class="inline-lang">Datum prihoda *</label>
+                <label data-lang="de" class="inline-lang">Anreisedatum *</label>
+                <label data-lang="it" class="inline-lang">Data di arrivo *</label>
+                <input type="date" required>
+            </div>
+            <div class="form-group">
+                <label data-lang="en" class="inline-lang active">Check-out Date *</label>
+                <label data-lang="hr" class="inline-lang">Datum odlaska *</label>
+                <label data-lang="pl" class="inline-lang">Data wyjazdu *</label>
+                <label data-lang="sl" class="inline-lang">Datum odhoda *</label>
+                <label data-lang="de" class="inline-lang">Abreisedatum *</label>
+                <label data-lang="it" class="inline-lang">Data di partenza *</label>
+                <input type="date" required>
+            </div>
+            <div class="form-group">
+                <label data-lang="en" class="inline-lang active">Number of Guests *</label>
+                <label data-lang="hr" class="inline-lang">Broj gostiju *</label>
+                <label data-lang="pl" class="inline-lang">Liczba gości *</label>
+                <label data-lang="sl" class="inline-lang">Število gostov *</label>
+                <label data-lang="de" class="inline-lang">Anzahl der Gäste *</label>
+                <label data-lang="it" class="inline-lang">Numero di ospiti *</label>
+                <input type="number" min="1" max="3" required>
+            </div>
+            <div class="form-group">
+                <label data-lang="en" class="inline-lang active">Message</label>
+                <label data-lang="hr" class="inline-lang">Poruka</label>
+                <label data-lang="pl" class="inline-lang">Wiadomość</label>
+                <label data-lang="sl" class="inline-lang">Sporočilo</label>
+                <label data-lang="de" class="inline-lang">Nachricht</label>
+                <label data-lang="it" class="inline-lang">Messaggio</label>
+                <textarea></textarea>
+            </div>
+            <button type="submit" class="book-btn" style="width: 100%;">
+                <span data-lang="en" class="inline-lang active">Send Inquiry</span>
+                <span data-lang="hr" class="inline-lang">Pošalji upit</span>
+                <span data-lang="pl" class="inline-lang">Wyślij zapytanie</span>
+                <span data-lang="sl" class="inline-lang">Pošlji povpraševanje</span>
+                <span data-lang="de" class="inline-lang">Anfrage senden</span>
+                <span data-lang="it" class="inline-lang">Invia richiesta</span>
+            </button>
+        </form>
+
+        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--bg-alt); border-radius: 12px;">
+            <h3 style="margin-bottom: 1rem;">
+                <span data-lang="en" class="inline-lang active">Or contact us directly:</span>
+                <span data-lang="hr" class="inline-lang">Ili nas kontaktirajte izravno:</span>
+                <span data-lang="pl" class="inline-lang">Lub skontaktuj się z nami bezpośrednio:</span>
+                <span data-lang="sl" class="inline-lang">Ali nas kontaktirajte neposredno:</span>
+                <span data-lang="de" class="inline-lang">Oder kontaktieren Sie uns direkt:</span>
+                <span data-lang="it" class="inline-lang">O contattaci direttamente:</span>
+            </h3>
+            <p><strong>Email:</strong> info@villa-postira.com</p>
+            <p><strong>Phone:</strong> +385 91 234 5678</p>
+            <p style="margin-top: 1rem;">
+                <span data-lang="en" class="inline-lang active">Check-in: from 14:00 | Check-out: until 10:00</span>
+                <span data-lang="hr" class="inline-lang">Dolazak: od 14:00 | Odlazak: do 10:00</span>
+                <span data-lang="pl" class="inline-lang">Przyjazd: od 14:00 | Wyjazd: do 10:00</span>
+                <span data-lang="sl" class="inline-lang">Prijava: od 14:00 | Odjava: do 10:00</span>
+                <span data-lang="de" class="inline-lang">Check-in: ab 14:00 | Check-out: bis 10:00</span>
+                <span data-lang="it" class="inline-lang">Check-in: dalle 14:00 | Check-out: entro le 10:00</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Villa Postira</h3>
+                <p>Postira, Island of Brač<br>Croatia</p>
+                <p>A-2911-a</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang="en" class="inline-lang active">Quick Links</h3>
+                <h3 data-lang="hr" class="inline-lang">Brze veze</h3>
+                <h3 data-lang="pl" class="inline-lang">Szybkie linki</h3>
+                <h3 data-lang="sl" class="inline-lang">Hitre povezave</h3>
+                <h3 data-lang="de" class="inline-lang">Schnelllinks</h3>
+                <h3 data-lang="it" class="inline-lang">Link rapidi</h3>
+                <a href="#gallery">
+                    <span data-lang="en" class="inline-lang active">Gallery</span>
+                    <span data-lang="hr" class="inline-lang">Galerija</span>
+                    <span data-lang="pl" class="inline-lang">Galeria</span>
+                    <span data-lang="sl" class="inline-lang">Galerija</span>
+                    <span data-lang="de" class="inline-lang">Galerie</span>
+                    <span data-lang="it" class="inline-lang">Galleria</span>
+                </a>
+                <a href="#features">
+                    <span data-lang="en" class="inline-lang active">Features</span>
+                    <span data-lang="hr" class="inline-lang">Sadržaji</span>
+                    <span data-lang="pl" class="inline-lang">Udogodnienia</span>
+                    <span data-lang="sl" class="inline-lang">Oprema</span>
+                    <span data-lang="de" class="inline-lang">Ausstattung</span>
+                    <span data-lang="it" class="inline-lang">Servizi</span>
+                </a>
+                <a href="#location">
+                    <span data-lang="en" class="inline-lang active">Location</span>
+                    <span data-lang="hr" class="inline-lang">Lokacija</span>
+                    <span data-lang="pl" class="inline-lang">Lokalizacja</span>
+                    <span data-lang="sl" class="inline-lang">Lokacija</span>
+                    <span data-lang="de" class="inline-lang">Lage</span>
+                    <span data-lang="it" class="inline-lang">Posizione</span>
+                </a>
+                <a href="#contact">
+                    <span data-lang="en" class="inline-lang active">Contact</span>
+                    <span data-lang="hr" class="inline-lang">Kontakt</span>
+                    <span data-lang="pl" class="inline-lang">Kontakt</span>
+                    <span data-lang="sl" class="inline-lang">Kontakt</span>
+                    <span data-lang="de" class="inline-lang">Kontakt</span>
+                    <span data-lang="it" class="inline-lang">Contatto</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang="en" class="inline-lang active">Explore</h3>
+                <h3 data-lang="hr" class="inline-lang">Istražite</h3>
+                <h3 data-lang="pl" class="inline-lang">Odkryj</h3>
+                <h3 data-lang="sl" class="inline-lang">Raziščite</h3>
+                <h3 data-lang="de" class="inline-lang">Entdecken</h3>
+                <h3 data-lang="it" class="inline-lang">Esplora</h3>
+                <p>
+                    <span data-lang="en" class="inline-lang active">Beaches of Brač</span>
+                    <span data-lang="hr" class="inline-lang">Plaže Brača</span>
+                    <span data-lang="pl" class="inline-lang">Plaże Brača</span>
+                    <span data-lang="sl" class="inline-lang">Plaže Brača</span>
+                    <span data-lang="de" class="inline-lang">Strände von Brač</span>
+                    <span data-lang="it" class="inline-lang">Spiagge di Brač</span>
+                </p>
+                <p>
+                    <span data-lang="en" class="inline-lang active">Local Restaurants</span>
+                    <span data-lang="hr" class="inline-lang">Lokalni restorani</span>
+                    <span data-lang="pl" class="inline-lang">Lokalne restauracje</span>
+                    <span data-lang="sl" class="inline-lang">Lokalne restavracije</span>
+                    <span data-lang="de" class="inline-lang">Lokale Restaurants</span>
+                    <span data-lang="it" class="inline-lang">Ristoranti locali</span>
+                </p>
+                <p>
+                    <span data-lang="en" class="inline-lang active">Things to Do</span>
+                    <span data-lang="hr" class="inline-lang">Što raditi</span>
+                    <span data-lang="pl" class="inline-lang">Co robić</span>
+                    <span data-lang="sl" class="inline-lang">Kaj početi</span>
+                    <span data-lang="de" class="inline-lang">Aktivitäten</span>
+                    <span data-lang="it" class="inline-lang">Cosa fare</span>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang="en" class="inline-lang active">Contact</h3>
+                <h3 data-lang="hr" class="inline-lang">Kontakt</h3>
+                <h3 data-lang="pl" class="inline-lang">Kontakt</h3>
+                <h3 data-lang="sl" class="inline-lang">Kontakt</h3>
+                <h3 data-lang="de" class="inline-lang">Kontakt</h3>
+                <h3 data-lang="it" class="inline-lang">Contatto</h3>
+                <p>Email: info@villa-postira.com</p>
+                <p>Phone: +385 91 234 5678</p>
+                <p>WhatsApp: +385 91 234 5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Villa Postira. All rights reserved. | 
+                <span data-lang="en" class="inline-lang active">Apartment A-2911-a, Postira, Brač, Croatia</span>
+                <span data-lang="hr" class="inline-lang">Apartman A-2911-a, Postira, Brač, Hrvatska</span>
+                <span data-lang="pl" class="inline-lang">Apartament A-2911-a, Postira, Brač, Chorwacja</span>
+                <span data-lang="sl" class="inline-lang">Apartma A-2911-a, Postira, Brač, Hrvaška</span>
+                <span data-lang="de" class="inline-lang">Apartment A-2911-a, Postira, Brač, Kroatien</span>
+                <span data-lang="it" class="inline-lang">Appartamento A-2911-a, Postira, Brač, Croazia</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Language Switcher
+        const langButtons = document.querySelectorAll('.lang-btn');
+        let currentLang = 'en';
+
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.getAttribute('data-lang');
+                switchLanguage(lang);
+                
+                langButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            
+            // Hide all language elements
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show selected language elements
+            document.querySelectorAll(`[data-lang="${lang}"]`).forEach(el => {
+                el.classList.add('active');
+            });
+
+            // Update inline language elements
+            document.querySelectorAll('.inline-lang').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll(`.inline-lang[data-lang="${lang}"]`).forEach(el => {
+                el.classList.add('active');
+            });
+        }
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form Handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const messages = {
+                en: 'Thank you for your inquiry! We will contact you within 24 hours.',
+                hr: 'Hvala na upitu! Javit ćemo vam se u roku od 24 sata.',
+                pl: 'Dziękujemy za zapytanie! Skontaktujemy się z Tobą w ciągu 24 godzin.',
+                sl: 'Hvala za povpraševanje! Kontaktirali vas bomo v 24 urah.',
+                de: 'Vielen Dank für Ihre Anfrage! Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.',
+                it: 'Grazie per la tua richiesta! Ti contatteremo entro 24 ore.'
+            };
+            
+            alert(messages[currentLang]);
+            this.reset();
+        });
+
+        // Initialize
+        switchLanguage('en');
+    </script>
+</body>
+</html>
